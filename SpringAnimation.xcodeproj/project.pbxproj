@@ -13,6 +13,7 @@
 		89CD53EE2823D81F0085ABB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CD53EC2823D81F0085ABB7 /* Main.storyboard */; };
 		89CD53F02823D8200085ABB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89CD53EF2823D8200085ABB7 /* Assets.xcassets */; };
 		89CD53F32823D8200085ABB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CD53F12823D8200085ABB7 /* LaunchScreen.storyboard */; };
+		89CD53FB2823DC270085ABB7 /* Extension + UIBUtton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD53FA2823DC270085ABB7 /* Extension + UIBUtton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		89CD53EF2823D8200085ABB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89CD53F22823D8200085ABB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89CD53F42823D8200085ABB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89CD53FA2823DC270085ABB7 /* Extension + UIBUtton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIBUtton.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				89CD53E62823D81F0085ABB7 /* AppDelegate.swift */,
 				89CD53E82823D81F0085ABB7 /* SceneDelegate.swift */,
 				89CD53EA2823D81F0085ABB7 /* ViewController.swift */,
+				89CD53FA2823DC270085ABB7 /* Extension + UIBUtton.swift */,
 				89CD53EC2823D81F0085ABB7 /* Main.storyboard */,
 				89CD53EF2823D8200085ABB7 /* Assets.xcassets */,
 				89CD53F12823D8200085ABB7 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				89CD53EB2823D81F0085ABB7 /* ViewController.swift in Sources */,
 				89CD53E72823D81F0085ABB7 /* AppDelegate.swift in Sources */,
 				89CD53E92823D81F0085ABB7 /* SceneDelegate.swift in Sources */,
+				89CD53FB2823DC270085ABB7 /* Extension + UIBUtton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +297,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +309,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,6 +326,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +338,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
