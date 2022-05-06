@@ -5,11 +5,12 @@
 //  Created by Борис Павлов on 05.05.2022.
 //
 
-import UIKit
+import Spring
 
 class ViewController: UIViewController {
     
     @IBOutlet weak var coreAnimationView: UIView!
+    @IBOutlet weak var springAnimationView: SpringView!
     
     private var animationStarted = false
     
@@ -28,12 +29,15 @@ class ViewController: UIViewController {
                 }
             }
     }
+    
+    @IBAction func runSpringAnimation(_ sender: SpringButton) {
+        springAnimationView.animation = "morph"
+        springAnimationView.curve = "easeIn"
+        springAnimationView.duration = 1
+        springAnimationView.animate()
+        
+        sender.animation = "wobble"
+        sender.animate()
+    }
 }
-/*
- Судя по уроку некорректная работа анимации, или информация уже устарела.
- При нажатии на кнопку, вью не двигается.(Если анимация еще не прописана)
- Если анимация прописана, вью двигается как маятник, только есть одно НО, при нажатии на кнопку анимация происходит в правую сторону, когда у Алексея задан параметр в левую сторону. (НЕ понятно)
- При повторном нажатии, анимация перестает работать. У Алексея же наоборот, анимация продолжает работать, и вью смещается левее.
- (Код и положение объектов в сториборде идентичные тому, что Алексей показывает в уроке)
- p.s вопрос по уроку 2.9 (CocoaPods и работа с анимациями), недопонимание начинается с тайминга 1ч 22 минуты
- */
+
